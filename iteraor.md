@@ -7,31 +7,49 @@
 -파이썬의 내장함수 iter()를 이용해 iterator 객체를 만든다.
 2. iterator 예제
 --1-
-  >>> list = [1,2,3]
-  >>> it = iter(list)
-  >>> next(it)
-  1
-  >>> next(it)
+
+>>> list = [1,2,3]
+
+>>> it = iter(list)
+
+>>> next(it)
+1
+
+>>> next(it)
   2
-  >>> next(it)
+
+>>> next(it)
   3
+
 --2-
-  >>> list = range(1,10)
-  >>> it = iter(list)
-  >>> next(it)
+
+>>> list = range(1,10)
+
+>>> it = iter(list)
+
+>>> next(it)
   1
-  >>> next(it)
+
+>>> next(it)
   2
-  >>> next(it)
+
+>>> next(it)
   3
-  >>> next(it)
+
+>>> next(it)
   4
-  >>> next(it)
+
+>>> next(it)
   5
+
+
 --3-
-  >>> list = range(1,10)
-  >>> it = iter(list)
-  >>> for i in range(1,10):
+
+>>> list = range(1,10)
+
+>>> it = iter(list)
+
+>>> for i in range(1,10):
   ...     next(it)
   ...
   1
@@ -43,12 +61,18 @@
   7
   8
   9
+
 --4-
-  >>> list  = {'a':1,'b':2,'c':3}
-  >>> it  = iter(list)
-  >>> next(it)
+
+>>> list  = {'a':1,'b':2,'c':3}
+
+>>> it  = iter(list)
+
+>>> next(it)
   'a'
-  >>> next(it)
+
+>>> next(it)
   'b'
-  >>> next(it)
+
+>>> next(it)
   'c'
