@@ -8,60 +8,60 @@
 2. iterator 예제
 --1-
 
->>> list = [1,2,3]
+    >>> list = [1,2,3]
+    
+    >>> it = iter(list)
+    
+    >>> next(it)
+    1
 
->>> it = iter(list)
+    >>> next(it)
+    2
 
->>> next(it)
-1
+    >>> next(it)
+    3
 
->>> next(it)
-  2
+    --2-
 
->>> next(it)
-  3
+    >>> list = range(1,10)
 
---2-
+    >>> it = iter(list)
 
->>> list = range(1,10)
+    >>> next(it)
+    1
 
->>> it = iter(list)
+    >>> next(it)
+    2
 
->>> next(it)
-  1
+    >>> next(it)
+    3
 
->>> next(it)
-  2
+    >>> next(it)
+    4
 
->>> next(it)
-  3
-
->>> next(it)
-  4
-
->>> next(it)
-  5
+    >>> next(it)
+    5
 
 
---3-
+    --3-
 
->>> list = range(1,10)
+    >>> list = range(1,10)
 
->>> it = iter(list)
+    >>> it = iter(list)
 
->>> for i in range(1,10):
-  ...     next(it)
-  ...
-  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
-
+    >>> for i in range(1,10):
+    ...     next(it)
+    ...
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    
 --4-
 
 >>> list  = {'a':1,'b':2,'c':3}
