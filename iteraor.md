@@ -52,11 +52,11 @@
     
 --4-
 
->>> list  = {'a':1,'b':2,'c':3}
->>> it  = iter(list)
->>> next(it)
-  'a'
->>> next(it)
-  'b'
->>> next(it)
-  'c'
+    >>> list  = {'a':1,'b':2,'c':3}
+    >>> it  = iter(list)
+    >>> next(it)
+    'a'
+    >>> next(it)
+    'b'
+    >>> next(it)
+    'c'
